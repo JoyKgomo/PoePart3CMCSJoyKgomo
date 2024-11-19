@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("POEPART3CMCS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7d52a211c35e5be0151a25e851b75df441167bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fff355af579ffc09f1c6ba8778ed551ae086120")]
 [assembly: System.Reflection.AssemblyProductAttribute("POEPART3CMCS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("POEPART3CMCS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

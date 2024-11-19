@@ -3,47 +3,95 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - POEPART3CMCS</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewData["Title"] - CMCS</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/POEPART3CMCS.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CMCS.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">POEPART3CMCS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        
+            <div class="navbar-links">
+                @if (AppStateModel.State == "Lecturer")
+                {
+                    <ul>
+                        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li>
+                            <a href="@Url.Action("Login", "Home")">
+                                <i class="fas fa-sign-in-alt"></i> <!-- Login icon -->
+                                <span class="sr-only">Login</span> <!-- For accessibility -->
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li>
+                            <a href="@Url.Action("LogOut", "Users")">
+                                <i class="fas fa-sign-out-alt"></i> <!-- Log Out icon -->
+                                <span class="sr-only">Log Out</span> <!-- For accessibility -->
+                            </a>
+                        </li>
+                        <li><a href="@Url.Action("Register", "Lecturer")">Register</a></li>
+                    </ul>
+                }
+                else if (AppStateModel.State == "HR")
+                {
+                    <ul>
+                        <li><a href="@Url.Action("Claims", "HR")">Shop</a></li>
+                        <li><a href="@Url.Action("ViewAllInvoices", "HR")">Invoices</a></li>
+                        <li>
+                            <a href="@Url.Action("Login", "Home")">
+                                <i class="fas fa-sign-in-alt"></i> <!-- Login icon -->
+                                <span class="sr-only">Login</span> <!-- For accessibility -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("LogOut", "HR")">
+                                <i class="fas fa-sign-out-alt"></i> <!-- Log Out icon -->
+                                <span class="sr-only">Log Out</span> <!-- For accessibility -->
+                            </a>
                         </li>
                     </ul>
-                </div>
+                }
+                else if (AppStateModel.State == "Academic Manager")
+                {
+                    <ul>
+                        <li><a href="@Url.Action("Dashboard", "AcademicManager")">Shop</a></li>
+                        <li><a href="@Url.Action("ViewClaim", "AcademicManager")">Invoices</a></li>
+                        <li>
+                            <a href="@Url.Action("LogOut", "AcademicManager")">
+                                <i class="fas fa-sign-out-alt"></i> <!-- Log Out icon -->
+                                <span class="sr-only">Log Out</span> <!-- For accessibility -->
+                            </a>
+                        </li>
+                    </ul>
+                }
+                else
+                {
+                    <ul>
+                        <li><a href="@Url.Action("Dashboard", "ProgrammeCoordinator")">Manage</a></li>
+                        <li><a href="@Url.Action("ViewClaim", "ProgrammeCoordinator")">Add</a></li>
+                        <li>
+                            <a href="@Url.Action("LogOut", "ProgrammeCoordinator")">
+                                <i class="fas fa-sign-out-alt"></i> <!-- Log Out icon -->
+                                <span class="sr-only">Log Out</span> <!-- For accessibility -->
+                            </a>
+                        </li>
+                    </ul>
+                }
             </div>
         </nav>
     </header>
+
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - POEPART3CMCS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>JoyKgomo</p>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

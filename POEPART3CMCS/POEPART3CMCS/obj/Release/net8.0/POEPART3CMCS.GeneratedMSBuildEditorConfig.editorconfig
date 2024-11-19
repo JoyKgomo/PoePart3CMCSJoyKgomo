@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNhZGVtaWNNYW5hZ2VyXERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/AcademicManager/ViewClaim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNhZGVtaWNNYW5hZ2VyXFZpZXdDbGFpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,12 +38,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/HR/Claims.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcQ2xhaW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/HR/GenerateInvoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcR2VuZXJhdGVJbnZvaWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/HR/RegisterNewUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcUmVnaXN0ZXJOZXdVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/HR/ViewAllInvoices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcVmlld0FsbEludm9pY2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/HR/ViewSpecificInvoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFJcVmlld1NwZWNpZmljSW52b2ljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/Lecturer/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/Lecturer/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/Lecturer/submitClaim.cshtml]
@@ -52,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/ProgrammeCoordinator/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbW1lQ29vcmRpbmF0b3JcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/ProgrammeCoordinator/ViewClaim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbW1lQ29vcmRpbmF0b3JcVmlld0NsYWltLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lab_services_student/Documents/GitHub/PoePart3CMCSJoyKgomo/POEPART3CMCS/POEPART3CMCS/Views/Shared/Error.cshtml]

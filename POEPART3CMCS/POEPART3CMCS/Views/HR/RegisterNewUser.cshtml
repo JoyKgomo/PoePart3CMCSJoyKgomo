@@ -1,5 +1,33 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Register";
 }
+
+@model RegisterModel;
+
+<div class="register-container">
+    <h1>Register</h1>
+    <form asp-controller="Home" asp-action="RegisterUser" method="post" class="register-form">
+        <label for="Username">Username</label>
+        <input name="Username" asp-for="Username" required />
+
+        <label for="FirstName">First Name</label>
+        <input name="FirstName" asp-for="FirstName" required />
+
+        <label for="LastName">Last Name</label>
+        <input name="LastName" asp-for="LastName" required />
+
+        <label for="Email">Email</label>
+        <input name="Email" asp-for="Email" type="email" required />
+
+        <label for="Cell">Cell</label>
+        <input name="Cell" asp-for="Cell" type="tel" required />
+
+        <label for="Password">Password</label>
+        <input name="Password" asp-for="Password" type="password" required />
+
+        <label for="ConfirmPassword">Confirm Password</label>
+        <input name="ConfirmPassword" type="password" required />
+
+        <button type="submit" class="register-button">Register</button>
+    </form>
+</div>
