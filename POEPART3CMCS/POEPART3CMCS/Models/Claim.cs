@@ -11,6 +11,7 @@ namespace POEPART3CMCS.Models
         public int HoursWorked { get; set; }
         public double HourlyRate { get; set; }
         public double AmountDue { get; set; }
+        public string AdditionalNotes { get; set; }
         [NotMapped]
         public IFormFile Document { get; set; }
 

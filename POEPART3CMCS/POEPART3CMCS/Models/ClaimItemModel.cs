@@ -9,5 +9,6 @@
         public int Hours { get; set; }
         public double rate { get; set; }
         public double TotalFee { get; set; }
+        public IFormFile? Document { get; set; }
     }
 }
